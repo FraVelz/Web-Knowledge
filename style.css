@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgb(50, 50, 50), rgb(20, 20, 20));
+    color: rgb(220, 220, 220);
+}
+
+/** Author: FraVelz */
