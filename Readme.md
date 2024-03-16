@@ -1,6 +1,6 @@
 # Web-Knowledge
 
-#5 Project on the web using Html, CSS, Javascript. Made to view notes from the browser.
+#6 Project on the web using Html, CSS, Javascript. Made to view notes from the browser.
 
 I save notes of some type of information in .md (markdown) and view them with the website.
 
