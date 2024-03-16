@@ -6,23 +6,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Knowledge</title>
+    <title>Knowledge FraVelz</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/ca31afd379.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <header class="header"></header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
+    <header class="header">
+        <h2 class="h__title">Knowledge FraVelz</h2>
+    </header>
+    
+    <main class="main">
+        <article class="articles article1">
+            <p class="summary">Quieres Mejorar Bro?</p>
+            <p class="text">Informacion de Diferentes Campos. Abrir Archivos.</p>
+        
+            <input class="btn-file" id="file" type="file" accept=".md, .txt" multiple>
+            
+            <label for="file" class="lbl_file">
+                <span class="file__info">Ningun Archivo Seleccionado</span>
+                <span class="file__open">Abrir</span>
+            </label>
+        </article>
+    </main>
 
-    <script src="script.js"></script>
+    <footer class="footer">
+        <p class="author">Author: Francisco Vélez | FraVelz</p>
+        <p class="version">Version: 1.0 Beta</p>
+    </footer>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

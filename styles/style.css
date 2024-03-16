@@ -1,0 +1,137 @@
+
+/************* ************* General ************* *************/
+* {
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+    font-family: sans-serif;
+}
+
+:root {
+    --clr-f-main: linear-gradient(to bottom, rgb(50, 50, 50), rgb(20, 20, 20));
+    --clr-text: rgb(220, 220, 220);
+}
+
+body {
+    min-height: 100vh;
+    background: var(--clr-f-main);
+    color: var(--clr-text);
+}
+
+::-webkit-scrollbar { width: 12px; }
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .6);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(180, 180, 255);
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, rgba(100, 100, 200), rgba(50, 50, 150));
+}
+
+/************* ************* Header ************* *************/
+
+.header {
+    user-select: none;
+    background: linear-gradient(to left, rgba(100, 100, 200), rgba(50, 50, 150));
+}
+   
+.h__title {
+    padding: 15px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/************* ************* Main ************* *************/
+.main { padding: 10px; min-height: calc(100vh - 94.67px - 66.8px); } 
+
+.articles {
+    width: 90%; 
+    margin: 20px auto;
+    padding: 20px;
+
+    border-radius: 30px;
+    border: 2px solid rgb(180, 180, 255);
+}
+
+.summary {
+    font-size: 1.8rem; text-align: center;
+}
+
+.section { 
+    margin: 10px 0px; padding: 10px 5px; 
+    border-radius: 15px;
+    
+    display: grid; gap: 10px;
+}
+
+.text, .subtitle, .text, .li { font-size: 1.2rem; }
+
+.text {
+    margin: 30px 0px;
+    color: rgb(200, 200, 200);
+}
+
+.subtitle { margin-top: 15px; }
+.text, .li { color: rgb(180, 180, 180); }
+
+.txt_author {
+    text-align: center;
+}
+
+.center { margin-left: calc(50% - 75px); }
+
+.ul, .ol {
+    margin: 5px; margin-left: 20px;
+    display: grid; gap: 10px;
+}
+
+.li b {
+    font-weight: bold; font-size: 1.2rem;
+}
+
+.btn-file { display: none; }
+.lbl_file { display: flex; }
+
+.file__info, .file__open {
+    font-size: 1.2rem; padding: 5px 10px;
+    cursor: pointer; user-select: none;
+}
+
+.file__info {
+    border: 1px solid rgb(180, 180, 255);
+    border-radius: 10px 0px 0px 10px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.file__open {
+    background: rgb(180, 180, 255);
+    color: rgb(50, 50, 50);
+    border: 1px solid rgb(180, 180, 255);
+    border-radius: 0px 10px 10px 0px;
+}
+
+/************* ************* Footer ************* *************/
+
+.footer {
+    user-select: none; padding: 10px;
+    background: linear-gradient(to right, rgba(100, 100, 200), rgba(50, 50, 150));
+}
+
+.author, .version {  text-align: center; }
+
+.author {
+    margin: 10px; font-size: 1.5rem;
+}
+
+.version {
+    margin: 5px; font-size: 1.2rem;
+}
+
+/** Author: FraVelz */
