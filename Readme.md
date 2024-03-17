@@ -14,7 +14,7 @@ If it still does not work, it is because the .md file has obsolete markings for 
 
 ![Image from the website](./Image1.png)
 
-link: [Go to the website.](https://fravelz.github.io/Web-Question/)
+link: [Go to the website.](https://fravelz.github.io/Web-Knowledge/)
 
 **Best regard !!!**
 
