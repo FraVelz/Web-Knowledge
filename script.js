@@ -101,4 +101,60 @@ btn_file.addEventListener('change', e => {
     }
 })
 
+// ********************************** ********************************** //
+
+const func = async path => {
+    fetch(path).then(response => response.text())
+    .then(data => format_text(data));
+}
+
+const add_func = (class_, path_) => {
+    document.querySelector(class_).addEventListener(
+        'click', () => func(path_)
+    )    
+}
+
+// * Fisico ********************************** //
+let path_f = '/files_md/Fisico/'
+
+add_func('.ejercicio', `${path_f}ejercicio.md`)
+add_func('.straddle-planche', `${path_f}straddle-planche.md`)
+
+// // * Git-Github ********************************** //
+// let path_g = '/files_md/git-github/'
+
+// // add_func('.git', `${path_f}git.md`)
+
+// document.querySelector('.git').addEventListener(
+//     'click', () => func('/files_md/git-github/git.md')
+// )
+
+
+// document.querySelector('.github').addEventListener(
+//     'click', () => func('/files_md/git-github/github.md')
+// )
+
+// * Mentalidad ********************************** //
+// document.querySelector('.finanzas').addEventListener(
+//     'click', () => func('/files_md/mentalidad/finanzas.md')
+// )
+// document.querySelector('.inseguridad').addEventListener(
+//     'click', () => func('/files_md/mentalidad/inseguridad.md')
+// )
+// document.querySelector('.laSombra').addEventListener(
+//     'click', () => func('/files_md/mentalidad/laSombra.md')
+// )
+// document.querySelector('.naturaleza-humana').addEventListener(
+//     'click', () => func('/files_md/mentalidad/naturaleza-humana.md')
+// )
+// document.querySelector('.romance').addEventListener(
+//     'click', () => func('/files_md/mentalidad/romance.md')
+// )
+// document.querySelector('.seduccion').addEventListener(
+//     'click', () => func('/files_md/mentalidad/seduccion.md')
+// )
+// document.querySelector('.soledad').addEventListener(
+//     'click', () => func('/files_md/mentalidad/soledad.md')
+// )
+
 //* Author: Francisco Vélez | FraVelz
