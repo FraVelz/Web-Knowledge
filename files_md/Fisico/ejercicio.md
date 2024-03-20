@@ -4,7 +4,7 @@
 
 ## 1-Mentalidad
 * Disfrutar del Proceso y en cambiar la identidad.
-
+* (No mensionado) Tener limites de repeticiones y incrementar con el tiempo y no llegar al fallo.
 * Factore a tener en cuenta: Disiplina, Perseverancia, Persistencia.
 <hr>
 
@@ -27,7 +27,7 @@
 Nesesitamos: Amplitud, Densidad
 
 * Amplitud: ancho de la espalda.
-* Densidad: Musculatura de la espalda
+* Densidad: Musculatura de la espalda.
 
 Entrenamientos:
 
@@ -64,7 +64,7 @@ Deltoides medial:
 * vuelos laterales.
 
 Deltoides posterior:
-* Jalones a la cara en polea
+* Jalones a la cara en polea.
 * Remos.
 
 2-3 Veces por semana.
@@ -72,11 +72,11 @@ Deltoides posterior:
 <hr>
 
 ## Pecho (pectorales):
-* Press de banca
-* Press inclinado
-* Cruses en polea 
-* Fondos
-* Flexiones y flexiones diamantes
+* Press de banca.
+* Press inclinado.
+* Cruses en polea.
+* Fondos.
+* Flexiones y flexiones diamantes.
 
 2-3 veces por cemana
 
@@ -99,20 +99,20 @@ Partes de los brazos:
 
 tricep:
 
-* Press Frances
-* Extension de katana
-* Fondos inverso
+* Press Frances.
+* Extension de katana.
+* Fondos inverso.
 
-* Jalones en polea alta
-* Fondos
+* Jalones en polea alta.
+* Fondos.
 * Variaciones de flexiones diamantes y tigres.
 
 Bicep:
 
-* Curl de bicep
-* Curl de bicep inclinado
-* Curl de martillo
-* Dominadas con agarre neutro
+* Curl de bicep.
+* Curl de bicep inclinado.
+* Curl de martillo.
+* Dominadas con agarre neutro.
 
 Antebrazos:
 * Curl de biceps invertidos.

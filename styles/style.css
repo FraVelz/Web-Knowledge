@@ -126,22 +126,21 @@ body {
 
 .opc-main {
     margin: 5px; margin-left: 20px; 
+    cursor: pointer;
     font-size: 1.2rem; color: var(--clr-text-tem);
 }
 
-.link_main { cursor: pointer; }
-
-.link_main:hover { 
+.opc-main:hover { 
     padding: 5px; border-radius: 10px;
     background: rgba(80, 80, 80); 
 }
 
-.link_main:active { padding-left: 10px; }
+.opc-main:active { padding-left: 10px; }
 
 /** Btn File ************************* */
 
 .btn-file { display: none; }
-.lbl_file { display: flex; }
+.lbl_file { display: flex; width: min-content; }
 
 .file__info, .file__open {
     font-size: 1.2rem; padding: 5px 10px;
@@ -171,7 +170,9 @@ body {
     background: var(--clr-f-footer);
 }
 
-.author, .version {  text-align: center; }
+.author, .version { 
+    color: var(--clr-text); text-align: center; 
+}
 
 .author {
     margin: 10px; font-size: 1.5rem;

@@ -1,7 +1,6 @@
 'use strict'
 
 const btn_file = document.querySelector('.btn-file') 
-const link_main = document.querySelectorAll('.link_main') 
 
 const preview_file = file => {
     const reader = new FileReader();
@@ -106,8 +105,12 @@ btn_file.addEventListener('change', e => {
 
 let info_links = [
     // ** Fisico ******************************* //
-    ['.ejercicio', '/files_md/Fisico/ejercicio.md'],
-    ['.straddle-planche', '/files_md/Fisico/straddle-planche.md'],
+    ['.ejercicio', 'files_md/Fisico/ejercicio.md'],
+    ['.endurecer-rodillos', '/files_md/Fisico/endurecer-rodillos.md'],
+    ['.entrenamiento', '/files_md/Fisico/entrenamiento.md'],
+    ['.ganar-musculo', '/files_md/Fisico/ganar-musculo.md'],
+    ['.recibir-golpes', 'Web-Knowledge/files_md/Fisico/recibir-golpes.md'],
+    ['.straddle-planche', '/Web-Knowledge/files_md/Fisico/straddle-planche.md'],
 
     // ** Git-Github ******************************* //
     ['.git', '/files_md/git-github/git.md'],
@@ -163,28 +166,5 @@ const add_func = (class_, path_) => {
 for (const value of info_links) {
     add_func(value[0], value[1])
 }
-
-// * Mentalidad ********************************** //
-// document.querySelector('.finanzas').addEventListener(
-//     'click', () => func('/files_md/mentalidad/finanzas.md')
-// )
-// document.querySelector('.inseguridad').addEventListener(
-//     'click', () => func('/files_md/mentalidad/inseguridad.md')
-// )
-// document.querySelector('.laSombra').addEventListener(
-//     'click', () => func('/files_md/mentalidad/laSombra.md')
-// )
-// document.querySelector('.naturaleza-humana').addEventListener(
-//     'click', () => func('/files_md/mentalidad/naturaleza-humana.md')
-// )
-// document.querySelector('.romance').addEventListener(
-//     'click', () => func('/files_md/mentalidad/romance.md')
-// )
-// document.querySelector('.seduccion').addEventListener(
-//     'click', () => func('/files_md/mentalidad/seduccion.md')
-// )
-// document.querySelector('.soledad').addEventListener(
-//     'click', () => func('/files_md/mentalidad/soledad.md')
-// )
 
 //* Author: Francisco Vélez | FraVelz
