@@ -1,6 +1,7 @@
 'use strict'
 
 const btn_file = document.querySelector('.btn-file') 
+const link_main = document.querySelectorAll('.link_main') 
 
 const preview_file = file => {
     const reader = new FileReader();
@@ -103,9 +104,54 @@ btn_file.addEventListener('change', e => {
 
 // ********************************** ********************************** //
 
+let info_links = [
+    // ** Fisico ******************************* //
+    ['.ejercicio', '/files_md/Fisico/ejercicio.md'],
+    ['.straddle-planche', '/files_md/Fisico/straddle-planche.md'],
+
+    // ** Git-Github ******************************* //
+    ['.git', '/files_md/git-github/git.md'],
+    ['.github', '/files_md/git-github/github.md'],
+    
+    // ** Lenguaje Corporal ******************************* //
+    ['.lenguaje-corporal', '/files_md/lenguaje-corporal/lenguaje-corporal.md'],
+    ['.piernas-pies', '/files_md/lenguaje-corporal/piernas-pies.md'],
+    
+    // ** Mentalidad ******************************* //
+    ['.finanzas', '/files_md/mentalidad/finanzas.md'],
+    ['.inseguridad', '/files_md/mentalidad/inseguridad.md'],
+    ['.sombra', '/files_md/mentalidad/sombra.md'],
+    ['.naturaleza-humana', '/files_md/mentalidad/naturaleza-humana.md'],
+    ['.romance', '/files_md/mentalidad/romance.md'],
+    ['.seduccion', '/files_md/mentalidad/seduccion.md'],
+    ['.seduccion2', '/files_md/mentalidad/seduccion2.md'],
+    ['.mentalidad', '/files_md/mentalidad/mentalidad.md'],
+
+    
+    // ** Podcast ******************************* //
+    ['.amor', '/files_md/podcast/amor.md'],
+
+    
+    // ** Programacion ******************************* //
+    ['.html', '/files_md/programacion/html.md'],
+    ['.css', '/files_md/programacion/css.md'],
+
+    
+    // ** Otros ******************************* //
+    ['.calistenia', '/files_md/calistenia.md'],
+    ['.redes-sociales', '/files_md/redes-sociales.md'],
+    ['.riqueza', '/files_md/riqueza.md'],
+    ['.soledad', '/files_md/soledad.md']
+
+]
+
 const func = async path => {
-    fetch(path).then(response => response.text())
-    .then(data => format_text(data));
+    if (path !== '' || path !== undefined) {
+        fetch(path).then(response => response.text())
+        .then(data => format_text(data));
+    } else {
+        console.log('Error: 404 Undefined...')
+    }
 }
 
 const add_func = (class_, path_) => {
@@ -114,25 +160,9 @@ const add_func = (class_, path_) => {
     )    
 }
 
-// * Fisico ********************************** //
-let path_f = '/files_md/Fisico/'
-
-add_func('.ejercicio', `${path_f}ejercicio.md`)
-add_func('.straddle-planche', `${path_f}straddle-planche.md`)
-
-// // * Git-Github ********************************** //
-// let path_g = '/files_md/git-github/'
-
-// // add_func('.git', `${path_f}git.md`)
-
-// document.querySelector('.git').addEventListener(
-//     'click', () => func('/files_md/git-github/git.md')
-// )
-
-
-// document.querySelector('.github').addEventListener(
-//     'click', () => func('/files_md/git-github/github.md')
-// )
+for (const value of info_links) {
+    add_func(value[0], value[1])
+}
 
 // * Mentalidad ********************************** //
 // document.querySelector('.finanzas').addEventListener(

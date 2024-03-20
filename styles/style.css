@@ -8,7 +8,22 @@
 
 :root {
     --clr-f-main: linear-gradient(to bottom, rgb(50, 50, 50), rgb(20, 20, 20));
-    --clr-text: rgb(220, 220, 220);
+
+    --clr-text-title: rgb(200, 200, 200);
+    --clr-text-tem: rgb(170, 170, 170);
+    --clr-text-fo: rgb(50, 50, 50);
+    --clr-text: rgb(180, 180, 180);
+
+    --clr-f-scrollbar: linear-gradient(to bottom, rgba(100, 100, 200), rgba(50, 50, 150));
+
+    --clr-scrollbar: rgba(146, 146, 247, .7);
+    --clr-h-scrollbar: rgb(146, 146, 247);
+
+    --clr-f-header: linear-gradient(to left, rgba(100, 100, 200), rgba(50, 50, 150));
+    --clr-border-articles: rgb(180, 180, 255);
+
+    --clr-border-summary_: rgb(100, 100, 100);
+    --clr-f-footer: linear-gradient(to right, rgba(100, 100, 200), rgba(50, 50, 150));
 }
 
 body {
@@ -20,33 +35,35 @@ body {
 ::-webkit-scrollbar { width: 12px; }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, .6);
+    background: var(--clr-scrollbar);
     border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(180, 180, 255);
+    background: var(--clr-h-scrollbar);
 }
 
 ::-webkit-scrollbar-track {
-    background: linear-gradient(to bottom, rgba(100, 100, 200), rgba(50, 50, 150));
+    background: var(--clr-f-scrollbar);
 }
 
 /************* ************* Header ************* *************/
 
 .header {
     user-select: none;
-    background: linear-gradient(to left, rgba(100, 100, 200), rgba(50, 50, 150));
+    background: var(--clr-f-header);
 }
    
 .h__title {
-    padding: 15px;
-    font-size: 2rem;
+    padding: 15px; font-size: 2rem;
     text-align: center;
+    color: var(--clr-text-title);
 }
 
 /************* ************* Main ************* *************/
-.main { padding: 10px; min-height: calc(100vh - 94.67px - 66.8px); } 
+.main { 
+    padding: 10px; min-height: calc(100vh - 94.67px - 66.8px); 
+} 
 
 .articles {
     width: 90%; 
@@ -54,7 +71,7 @@ body {
     padding: 20px;
 
     border-radius: 30px;
-    border: 2px solid rgb(180, 180, 255);
+    border: 2px solid var(--clr-border-articles);
 }
 
 .summary {
@@ -68,19 +85,18 @@ body {
     display: grid; gap: 10px;
 }
 
-.text, .subtitle, .text, .li { font-size: 1.2rem; }
+/** Otros ************************* */
+.text { margin: 30px 0px; }
 
-.text {
-    margin: 30px 0px;
-    color: rgb(200, 200, 200);
+.subtitle { 
+    font-size: 1.4rem; margin-top: 15px; 
+    color: var(--clr-text-title);
+    cursor: auto;
 }
 
-.subtitle { margin-top: 15px; }
-.text, .li { color: rgb(180, 180, 180); }
+.text, .li { font-size: 1.2rem; color: var(--clr-text); }
 
-.txt_author {
-    text-align: center;
-}
+.txt_author { text-align: center; }
 
 .center { margin-left: calc(50% - 75px); }
 
@@ -89,9 +105,40 @@ body {
     display: grid; gap: 10px;
 }
 
-.li b {
-    font-weight: bold; font-size: 1.2rem;
+.li b { font-weight: bold; font-size: 1.2rem; }
+
+/** Temario ************************* */
+.details_ {
+    margin: 20px 10px; padding: 10px;
+    cursor: pointer;
+
+    border-radius: 10px; color: var(--clr-text-title);
+    border: 2px solid var(--clr-border-articles);
 }
+
+.details_[open] > .summary_ {
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--clr-border-summary_);
+}
+.summary_ {
+    font-size: 1.2rem;
+}
+
+.opc-main {
+    margin: 5px; margin-left: 20px; 
+    font-size: 1.2rem; color: var(--clr-text-tem);
+}
+
+.link_main { cursor: pointer; }
+
+.link_main:hover { 
+    padding: 5px; border-radius: 10px;
+    background: rgba(80, 80, 80); 
+}
+
+.link_main:active { padding-left: 10px; }
+
+/** Btn File ************************* */
 
 .btn-file { display: none; }
 .lbl_file { display: flex; }
@@ -102,7 +149,7 @@ body {
 }
 
 .file__info {
-    border: 1px solid rgb(180, 180, 255);
+    border: 1px solid var(--clr-border-articles);
     border-radius: 10px 0px 0px 10px;
 
     white-space: nowrap;
@@ -111,9 +158,9 @@ body {
 }
 
 .file__open {
-    background: rgb(180, 180, 255);
-    color: rgb(50, 50, 50);
-    border: 1px solid rgb(180, 180, 255);
+    background: var(--clr-border-articles);
+    color: var(--clr-text-fo);
+    border: 1px solid var(--clr-border-articles);
     border-radius: 0px 10px 10px 0px;
 }
 
@@ -121,7 +168,7 @@ body {
 
 .footer {
     user-select: none; padding: 10px;
-    background: linear-gradient(to right, rgba(100, 100, 200), rgba(50, 50, 150));
+    background: var(--clr-f-footer);
 }
 
 .author, .version {  text-align: center; }
