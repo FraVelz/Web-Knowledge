@@ -106,45 +106,45 @@ btn_file.addEventListener('change', e => {
 let info_links = [
     // ** Fisico ******************************* //
     ['.ejercicio', 'files_md/Fisico/ejercicio.md'],
-    ['.endurecer-rodillos', '/files_md/Fisico/endurecer-rodillos.md'],
-    ['.entrenamiento', '/files_md/Fisico/entrenamiento.md'],
-    ['.ganar-musculo', '/files_md/Fisico/ganar-musculo.md'],
-    ['.recibir-golpes', 'Web-Knowledge/files_md/Fisico/recibir-golpes.md'],
-    ['.straddle-planche', '/Web-Knowledge/files_md/Fisico/straddle-planche.md'],
+    ['.endurecer-rodillos', 'files_md/Fisico/endurecer-rodillos.md'],
+    ['.entrenamiento', 'files_md/Fisico/entrenamiento.md'],
+    ['.ganar-musculo', 'files_md/Fisico/ganar-musculo.md'],
+    ['.recibir-golpes', 'files_md/Fisico/recibir-golpes.md'],
+    ['.straddle-planche', 'files_md/Fisico/straddle-planche.md'],
 
     // ** Git-Github ******************************* //
-    ['.git', '/files_md/git-github/git.md'],
-    ['.github', '/files_md/git-github/github.md'],
+    ['.git', 'files_md/git-github/git.md'],
+    ['.github', 'files_md/git-github/github.md'],
     
     // ** Lenguaje Corporal ******************************* //
-    ['.lenguaje-corporal', '/files_md/lenguaje-corporal/lenguaje-corporal.md'],
-    ['.piernas-pies', '/files_md/lenguaje-corporal/piernas-pies.md'],
+    ['.lenguaje-corporal', 'files_md/lenguaje-corporal/lenguaje-corporal.md'],
+    ['.piernas-pies', 'files_md/lenguaje-corporal/piernas-pies.md'],
     
     // ** Mentalidad ******************************* //
-    ['.finanzas', '/files_md/mentalidad/finanzas.md'],
-    ['.inseguridad', '/files_md/mentalidad/inseguridad.md'],
-    ['.sombra', '/files_md/mentalidad/sombra.md'],
-    ['.naturaleza-humana', '/files_md/mentalidad/naturaleza-humana.md'],
-    ['.romance', '/files_md/mentalidad/romance.md'],
-    ['.seduccion', '/files_md/mentalidad/seduccion.md'],
-    ['.seduccion2', '/files_md/mentalidad/seduccion2.md'],
-    ['.mentalidad', '/files_md/mentalidad/mentalidad.md'],
+    ['.finanzas', 'files_md/mentalidad/finanzas.md'],
+    ['.inseguridad', 'files_md/mentalidad/inseguridad.md'],
+    ['.sombra', 'files_md/mentalidad/sombra.md'],
+    ['.naturaleza-humana', 'files_md/mentalidad/naturaleza-humana.md'],
+    ['.romance', 'files_md/mentalidad/romance.md'],
+    ['.seduccion', 'files_md/mentalidad/seduccion.md'],
+    ['.seduccion2', 'files_md/mentalidad/seduccion2.md'],
+    ['.mentalidad', 'files_md/mentalidad/mentalidad.md'],
+    ['.autoconocimiento', 'files_md/mentalidad/autoconocimiento.md'],
 
-    
     // ** Podcast ******************************* //
-    ['.amor', '/files_md/podcast/amor.md'],
+    ['.amor', 'files_md/podcast/amor.md'],
 
     
     // ** Programacion ******************************* //
-    ['.html', '/files_md/programacion/html.md'],
-    ['.css', '/files_md/programacion/css.md'],
+    ['.html', 'files_md/programacion/html.md'],
+    ['.css', 'files_md/programacion/css.md'],
 
     
     // ** Otros ******************************* //
-    ['.calistenia', '/files_md/calistenia.md'],
-    ['.redes-sociales', '/files_md/redes-sociales.md'],
-    ['.riqueza', '/files_md/riqueza.md'],
-    ['.soledad', '/files_md/soledad.md']
+    ['.calistenia', 'files_md/calistenia.md'],
+    ['.redes-sociales', 'files_md/redes-sociales.md'],
+    ['.riqueza', 'files_md/riqueza.md'],
+    ['.soledad', 'files_md/soledad.md']
 
 ]
 
